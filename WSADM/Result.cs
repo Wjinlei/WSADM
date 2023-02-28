@@ -1,6 +1,6 @@
 ﻿// Copyright (c) 2022 Tobias Streng, MIT license
 
-namespace Mojito;
+namespace WSADM;
 
 /// <summary>
 /// Used to determine, whether a method executes successfully or not. Has implicit cast implemented:

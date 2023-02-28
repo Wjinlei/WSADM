@@ -2,7 +2,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Mojito;
+namespace WSADM;
 
 public static class ResultExtensions
 {
