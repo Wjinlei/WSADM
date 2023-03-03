@@ -7,5 +7,5 @@ public interface IDriver
     /// </summary>
     /// <param name="path">The Web Server installation path</param>
     /// <returns></returns>
-    public Result<IServer> GetServer(string? path);
+    public Result<IServerManager> GetServerManager(string? path);
 }

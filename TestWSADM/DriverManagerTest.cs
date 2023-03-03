@@ -11,7 +11,7 @@ public class DriverManagerTest
         var driver = driverResult.GetOk();
 
         // Get Server
-        var serverResult = driver.GetServer("/var/hwsmaster/soft/server/apache_2.4.26");
+        var serverResult = driver.GetServerManager("/var/hwsmaster/soft/server/apache_2.4.26");
         Assert.That(serverResult.Success, Is.True);
         var apache = serverResult.GetOk();
 
