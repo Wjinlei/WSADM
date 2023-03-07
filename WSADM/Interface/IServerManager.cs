@@ -1,6 +1,6 @@
 ﻿using WSADM.Models;
 
-namespace WSADM;
+namespace WSADM.Interface;
 
 public interface IServerManager
 {

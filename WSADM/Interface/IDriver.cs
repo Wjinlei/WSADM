@@ -1,4 +1,4 @@
-﻿namespace WSADM;
+﻿namespace WSADM.Interface;
 
 public interface IDriver
 {
