@@ -12,8 +12,7 @@
 
 ## EN
 
-This is a management interface for operating `WebServer`, which implements a mechanism similar to `JDBC registration driver`.  
-It is designed as a `WebServer` management interface for `New Host Master` in the future You need to implement the `IDriver` interface and then pass the `GetServerManager(string? path)` method to get an instance of the server action object
+This is a management interface for operating `WebServer`, which implements a mechanism similar to `JDBC registration driver`. It is designed as a `WebServer` management interface for `New Host Master` in the future You need to implement the `IDriver` interface and then pass the `GetServerManager(string? path)` method to get an instance of the server action object
 
 
 Because operation `WebServer` may need to know `WebServer` installation path  
