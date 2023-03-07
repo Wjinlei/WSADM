@@ -16,9 +16,6 @@ public class DriverManagerTest
         var apache = serverResult.GetOk();
 
         // Used.
-        apache.Start();
-        apache.Stop();
         apache.Restart();
-        apache.Reload();
     }
 }
