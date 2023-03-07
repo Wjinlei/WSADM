@@ -1,6 +1,4 @@
-﻿using WSADM.Interface;
-
-namespace WSADM.Models;
+﻿namespace WSADM.Interfaces;
 
 public interface ISite
 {

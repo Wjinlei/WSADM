@@ -1,5 +1,5 @@
 ﻿using System.Reflection;
-using WSADM.Interface;
+using WSADM.Interfaces;
 
 namespace WSADM;
 
