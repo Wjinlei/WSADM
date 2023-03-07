@@ -10,6 +10,9 @@
 因此`GetServerManager(string? path)`方法会传递一个`Nullable`可为空的`path`安装路径  
 如果服务器不需要安装路径的情况，例如`IIS`则传递`null`即可。
 
+
+欢迎贡献接口代码，欢迎贡献实现类。
+
 ## EN
 
 This is a management interface for operating `WebServer`, which implements a mechanism similar to `JDBC registration driver`. It is designed as a `WebServer` management interface for `New Host Master` in the future You need to implement the `IDriver` interface and then pass the `GetServerManager(string? path)` method to get an instance of the server action object
@@ -18,3 +21,6 @@ This is a management interface for operating `WebServer`, which implements a mec
 Because operation `WebServer` may need to know `WebServer` installation path  
 So `GetServerManager(string? The path)` method passes a Nullable `path` installation path  
 If the server does not require the installation path, such as `IIS`, then pass `null`.
+
+
+Welcome to contribute interface code, welcome to contribute implementation classes.
