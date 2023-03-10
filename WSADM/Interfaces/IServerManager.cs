@@ -3,12 +3,12 @@
 public interface IServerManager
 {
     // Attribute
-    public ISiteCollection Sites { get; }
+    public ISiteCollection<ISite> Sites { get; }
 
     // Methods
-    public Result Start();
-    public Result Stop();
-    public Result Restart();
-    public Result Reload();
-    public Result CommitChanges();
+    public void Start();
+    public void Stop();
+    public void Restart();
+    public void Reload();
+    public void CommitChanges();
 }

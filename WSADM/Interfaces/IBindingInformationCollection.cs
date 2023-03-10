@@ -1,14 +1,17 @@
 ﻿namespace WSADM.Interfaces;
 
-public interface IBindingInformationCollection
+public interface IBindingInformationCollection : IEnumerable<IBindingInformation>
 {
-    public Result<IBindingInformation> Add(IBindingInformation bindingInformation);
-    public Result<IBindingInformation> Add(string domain);
-    public Result<IBindingInformation> Add(int port);
-    public Result<IBindingInformation> Add(string domain, int port);
+    public IBindingInformation this[int index] { get; }
+    public int Count { get; }
 
-    public IBindingInformationCollection GetCollection(string domain);
-    public IBindingInformationCollection GetCollection(int port);
-    public IBindingInformation[] ToArray();
-    public Result<IBindingInformation> GetFirst(string domain, int port);
+    // Method to implement the List data structure
+    public bool Contains(IBindingInformation bindingInformation);
+    public void Remove(IBindingInformation bindingInformation);
+    public void Clear();
+
+    // Special methods
+    public Result Add(int port);
+    public Result Add(string domain, int port);
+    public Result Add(IBindingInformation bindingInformation);
 }

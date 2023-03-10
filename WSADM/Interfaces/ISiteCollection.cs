@@ -1,12 +1,21 @@
-﻿namespace WSADM.Interfaces;
+﻿using System.Collections.Generic;
 
-public interface ISiteCollection
+namespace WSADM.Interfaces;
+
+public interface ISiteCollection<ISite> : IEnumerable<ISite>
 {
-    public Result<ISite> Add(ISite site);
-    public Result<ISite> Add(string name, string physicalPath, string domain);
-    public Result<ISite> Add(string name, string physicalPath, int port);
-    public Result<ISite> Add(string name, string physicalPath, string domain, int port);
-    public Result<ISite> Add(string name, string physicalPath, string domain, byte[] certificateHash);
-    public Result<ISite> Add(string name, string physicalPath, int port, byte[] certificateHash);
-    public Result<ISite> Add(string name, string physicalPath, string domain, int port, byte[] certificateHash);
+    public ISite this[string name] { get; }
+    public ISite this[int index] { get; } 
+    public int Count { get; }
+
+    // Method to implement the List data structure
+    public bool Contains(ISite site);
+    public void Remove(ISite site);
+    public void Clear();
+
+    // Special methods
+    public Result Add(ISite site);
+    public Result Add(string name, string physicalPath, int port);
+    public Result Add(string name, string physicalPath, string domain, int port);
+    public Result Add(string name, string physicalPath, IBindingInformationCollection bindings);
 }
