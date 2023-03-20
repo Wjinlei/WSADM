@@ -7,11 +7,11 @@ public interface IBindingInformationCollection : IEnumerable<IBindingInformation
     public int Count { get; }
 
     // Method to implement the List data structure
+    public IBindingInformation? Find(Predicate<IBindingInformation> match);
     public void Remove(string bindingInformationStr);
     public void Remove(IBindingInformation bindingInformation);
     public bool Contains(string bindingInformationStr);
     public bool Contains(IBindingInformation bindingInformation);
-    public IBindingInformation? Find(Predicate<IBindingInformation> match);
     public void Clear();
 
     // Special methods
