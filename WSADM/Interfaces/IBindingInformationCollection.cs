@@ -2,7 +2,7 @@
 
 public interface IBindingInformationCollection : IEnumerable<IBindingInformation>
 {
-    public IBindingInformation this[string bindingInformationStr] { get; }
+    public IBindingInformation? this[string bindingInformationStr] { get; }
     public IBindingInformation this[int index] { get; }
     public int Count { get; }
 

@@ -2,7 +2,7 @@
 
 public interface ISiteCollection<ISite> : IEnumerable<ISite>
 {
-    public ISite this[string name] { get; }
+    public ISite? this[string name] { get; }
     public ISite this[int index] { get; } 
     public int Count { get; }
 
