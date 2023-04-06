@@ -18,4 +18,5 @@ public interface IBindingInformationCollection : IEnumerable<IBindingInformation
     public Result Add(int port);
     public Result Add(string domain, int port);
     public Result Add(IBindingInformation bindingInformation);
+    public Result Add(string bindingInformation);
 }
