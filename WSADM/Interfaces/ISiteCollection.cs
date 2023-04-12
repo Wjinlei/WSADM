@@ -16,6 +16,7 @@ public interface ISiteCollection<ISite> : IEnumerable<ISite>
 
     // Special methods
     public Result Add(ISite site);
+    public Result Add(string name, string physicalPath, string binding);
     public Result Add(string name, string physicalPath, int port);
     public Result Add(string name, string physicalPath, string domain, int port);
     public Result Add(string name, string physicalPath, IBindingInformationCollection bindings);
