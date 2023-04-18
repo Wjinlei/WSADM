@@ -15,9 +15,9 @@ public interface IBindingInformationCollection : IEnumerable<IBindingInformation
     public IBindingInformation? Find(Predicate<IBindingInformation> match);
 
     // Special methods
+    public Result Add(IBindingInformation bindingInformation);
     public Result Add(int port);
     public Result Add(string domain, int port);
     public Result Add(string ipAddr, string domain, int port);
-    public Result Add(IBindingInformation bindingInformation);
     public Result Add(string bindingInformation);
 }
