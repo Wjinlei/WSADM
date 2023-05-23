@@ -6,4 +6,5 @@ public interface ISite
     public string PhysicalPath { get; set; }
     public string RunPath { get; set; }
     public IBindingInformationCollection Bindings { get; set; }
+    public ISiteLimits Limits { get; set; }
 }
