@@ -1,10 +1,11 @@
-﻿namespace WSADM.Interfaces;
+﻿using System.Net;
+
+namespace WSADM.Interfaces;
 
 public interface IBindingInformation
 {
-    public string Address { get; set; }
-    public string Host { get; set; }
-    public int Port { get; set; }
+    public IPAddress Address { get; }
+    public string Host { get; }
+    public int Port { get; }
     public string BindingInformation { get; }
-    public string HostPort { get; }
 }

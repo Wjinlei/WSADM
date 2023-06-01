@@ -4,7 +4,11 @@ public interface ISite
 {
     public string Name { get; set; }
     public string PhysicalPath { get; set; }
-    public string RunPath { get; set; }
-    public IBindingInformationCollection Bindings { get; set; }
-    public ISiteLimits Limits { get; set; }
+    public IBindingInformationCollection Bindings { get; }
+    public ISiteLimits Limits { get; }
+    public ObjectState State { get; }
+
+    // Specific methods
+    public void Start();
+    public void Stop();
 }

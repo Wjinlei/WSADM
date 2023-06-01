@@ -8,7 +8,6 @@ public interface IBindingInformationCollection : IEnumerable<IBindingInformation
 
     // Specific methods
     public Result Add(IBindingInformation bindingInformation);
-    public Result Add(int port);
     public Result Add(string domain, int port);
     public Result Add(string ipAddr, string domain, int port);
     public Result Add(string bindingInformation);
@@ -19,5 +18,4 @@ public interface IBindingInformationCollection : IEnumerable<IBindingInformation
     public void Remove(IBindingInformation bindingInformation);
     public bool Contains(string bindingInformation);
     public bool Contains(IBindingInformation bindingInformation);
-    public IBindingInformation? Find(Predicate<IBindingInformation> match);
 }

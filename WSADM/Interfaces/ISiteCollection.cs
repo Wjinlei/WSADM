@@ -9,7 +9,6 @@ public interface ISiteCollection<ISite> : IEnumerable<ISite>
     // Specific methods
     public Result Add(ISite site);
     public Result Add(string name, string physicalPath, IBindingInformationCollection bindings);
-    public Result Add(string name, string physicalPath, int port);
     public Result Add(string name, string physicalPath, string domain, int port);
     public Result Add(string name, string physicalPath, string binding);
     public Result Add(string name, string physicalPath, List<string> bindings);
@@ -20,5 +19,4 @@ public interface ISiteCollection<ISite> : IEnumerable<ISite>
     public void Remove(ISite site);
     public bool Contains(string name);
     public bool Contains(ISite site);
-    public ISite? Find(Predicate<ISite> match);
 }
